@@ -1,0 +1,36 @@
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vh;
+  width: min(55vw, 720px);
+  margin-bottom: 4vh;
+}
+
+.lead-input {
+  font-family: var(--font-brand);
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  padding: 1.6vh 1.5vw;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.lead-input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lead-input:focus {
+  border-color: var(--red-signature);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.lead-error {
+  color: var(--red-mid-3);
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+  font-weight: 700;
+  min-height: 2.4vh;
+  margin-bottom: 1vh;
+}

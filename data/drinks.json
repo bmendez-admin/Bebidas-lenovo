@@ -1,0 +1,216 @@
+[
+  {
+    "id": "DR01",
+    "name": "Intel Inside Margarita",
+    "baseDrink": "Margarita",
+    "poweredBy": "Intel",
+    "alcoholic": true,
+    "tags": [
+      "POTENCIA",
+      "DUAL CORE",
+      "VELOCIDAD",
+      "SEGURIDAD",
+      "ESTABILIDAD"
+    ],
+    "ingredients": [
+      "Tequila",
+      "2 Limones",
+      "Triple Sec",
+      "Sal",
+      "Hielo"
+    ],
+    "keyIngredient": "Limón"
+  },
+  {
+    "id": "DR02",
+    "name": "Copilot Latte",
+    "baseDrink": "Café Latte",
+    "poweredBy": "Windows 11",
+    "alcoholic": false,
+    "tags": [
+      "PRODUCTIVIDAD",
+      "INTEGRACIÓN",
+      "FLUIDEZ",
+      "CREATIVIDAD"
+    ],
+    "ingredients": [
+      "Espresso",
+      "Leche",
+      "Espuma",
+      "Canela"
+    ],
+    "keyIngredient": "Canela"
+  },
+  {
+    "id": "DR03",
+    "name": "RTX Reserve",
+    "baseDrink": "Whisky Sour",
+    "poweredBy": "NVIDIA",
+    "alcoholic": true,
+    "tags": [
+      "GPU",
+      "PRECISIÓN",
+      "FLUIDEZ",
+      "RENDERIZACIÓN",
+      "COOLING"
+    ],
+    "ingredients": [
+      "Whisky",
+      "Limón",
+      "Almíbar",
+      "Espuma",
+      "Hielo"
+    ],
+    "keyIngredient": "Whisky"
+  },
+  {
+    "id": "DR04",
+    "name": "EPYC Sour",
+    "baseDrink": "Pisco Sour",
+    "poweredBy": "AMD",
+    "alcoholic": true,
+    "tags": [
+      "PERFORMANCE",
+      "RAPIDEZ",
+      "OPTIMIZACIÓN",
+      "BALANCE"
+    ],
+    "ingredients": [
+      "Pisco",
+      "Limón",
+      "Espuma",
+      "Jarabe"
+    ],
+    "keyIngredient": "Pisco"
+  },
+  {
+    "id": "DR05",
+    "name": "Razr Refresh",
+    "baseDrink": "Coca-Cola",
+    "poweredBy": "Motorola",
+    "alcoholic": false,
+    "tags": [
+      "ENERGÍA",
+      "FRESCURA",
+      "CONECTIVIDAD"
+    ],
+    "ingredients": [
+      "Coca-Cola",
+      "Hielo",
+      "Limón"
+    ],
+    "keyIngredient": "Coca-Cola"
+  },
+  {
+    "id": "DR06",
+    "name": "ThinkTab X11 Brew",
+    "baseDrink": "Café Americano",
+    "poweredBy": "Lenovo Tablets",
+    "alcoholic": false,
+    "tags": [
+      "MOVILIDAD",
+      "DURABILIDAD",
+      "CONECTIVIDAD",
+      "EFICIENCIA"
+    ],
+    "ingredients": [
+      "Espresso",
+      "Agua"
+    ],
+    "keyIngredient": "Espresso"
+  },
+  {
+    "id": "DR07",
+    "name": "Help Desk Cocoa",
+    "baseDrink": "Chocolate",
+    "poweredBy": "Lenovo Support",
+    "alcoholic": false,
+    "tags": [
+      "AGILIDAD",
+      "RESPALDO",
+      "DISPONIBILIDAD",
+      "ESTABILIDAD"
+    ],
+    "ingredients": [
+      "Chocolate",
+      "Leche",
+      "Espuma"
+    ],
+    "keyIngredient": "Chocolate"
+  },
+  {
+    "id": "DR08",
+    "name": "Lenovo Neptune Water",
+    "baseDrink": "Agua",
+    "poweredBy": "Lenovo ISG",
+    "alcoholic": false,
+    "tags": [
+      "POTENCIA",
+      "EFICIENCIA",
+      "ESCALABILIDAD",
+      "INNOVACIÓN"
+    ],
+    "ingredients": [
+      "Agua",
+      "Hielo"
+    ],
+    "keyIngredient": "Agua"
+  },
+  {
+    "id": "DR09",
+    "name": "Custom Blend Cappuccino",
+    "baseDrink": "Cappuccino",
+    "poweredBy": "Lenovo OEM Solutions",
+    "alcoholic": false,
+    "tags": [
+      "PERSONALIZACIÓN",
+      "ADAPTABILIDAD",
+      "ESCALABILIDAD",
+      "ESPECIALIZADO"
+    ],
+    "ingredients": [
+      "Espresso",
+      "Leche",
+      "Espuma"
+    ],
+    "keyIngredient": "Espresso"
+  },
+  {
+    "id": "DR10",
+    "name": "Qira Chai",
+    "baseDrink": "Té Chai",
+    "poweredBy": "Lenovo Qira",
+    "alcoholic": false,
+    "tags": [
+      "ASISTENCIA",
+      "PERSONALIZACIÓN",
+      "PROACTIVIDAD",
+      "IA"
+    ],
+    "ingredients": [
+      "Té",
+      "Leche",
+      "Canela",
+      "Miel"
+    ],
+    "keyIngredient": "Té"
+  },
+  {
+    "id": "DR11",
+    "name": "ThinkShield Club",
+    "baseDrink": "Cerveza Club Colombia",
+    "poweredBy": "Lenovo Cybersecurity",
+    "alcoholic": true,
+    "tags": [
+      "PROTECCIÓN",
+      "CONTROL",
+      "RESPUESTA",
+      "PREVENCIÓN"
+    ],
+    "ingredients": [
+      "Cerveza",
+      "Frío"
+    ],
+    "keyIngredient": "Cerveza"
+  }
+]

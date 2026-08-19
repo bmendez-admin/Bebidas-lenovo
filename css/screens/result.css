@@ -1,0 +1,136 @@
+.result-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-visual-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-visual {
+  width: clamp(200px, 26vw, 380px);
+  height: clamp(200px, 26vw, 380px);
+  object-fit: contain;
+  margin: 2vh 0 1.5vh;
+}
+
+.result-visual.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, var(--red-mid-2), var(--purple-deep-2));
+  border-radius: 24px;
+}
+
+.result-ingredient-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  opacity: 0.85;
+  margin-bottom: 1.4vh;
+}
+
+.result-ingredient-pill {
+  display: inline-block;
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  font-weight: 800;
+  color: var(--white);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 1.2vh 3vw;
+  margin-bottom: 3vh;
+}
+
+.result-tags-line {
+  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  opacity: 0.75;
+  max-width: 65vw;
+  letter-spacing: 0.02em;
+}
+
+.result-ingredients-full {
+  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  font-style: italic;
+  opacity: 0.7;
+  max-width: 70vw;
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  .result-layout {
+    margin-bottom: 5vh;
+  }
+
+  .result-visual {
+    width: clamp(280px, 62vw, 500px);
+    height: clamp(280px, 62vw, 500px);
+    margin: 2vh 0 2.2vh;
+  }
+
+  .result-ingredient-label {
+    font-size: clamp(1.05rem, 3vw, 1.4rem);
+  }
+
+  .result-ingredient-pill {
+    font-size: clamp(1.6rem, 4.6vw, 2.4rem);
+    padding: 1.7vh 7vw;
+  }
+
+  .result-tags-line {
+    font-size: clamp(1.05rem, 3vw, 1.4rem);
+    max-width: 88vw;
+  }
+
+  .result-ingredients-full {
+    font-size: clamp(1rem, 2.8vw, 1.25rem);
+    max-width: 88vw;
+  }
+}
+
+@media (orientation: landscape) {
+  .result-layout {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    max-width: 1500px;
+  }
+
+  .result-info {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .result-info .brand-title,
+  .result-info .eyebrow,
+  .result-info .result-ingredient-label,
+  .result-info .result-tags-line {
+    max-width: 100%;
+  }
+
+  .result-visual-wrap {
+    flex: 0 0 auto;
+  }
+
+  .result-visual {
+    width: clamp(240px, 21vw, 360px);
+    height: clamp(240px, 21vw, 360px);
+    margin: 0 0 1.5vh;
+  }
+}

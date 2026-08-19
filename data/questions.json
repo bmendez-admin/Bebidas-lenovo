@@ -1,0 +1,156 @@
+[
+  {
+    "id": "A1",
+    "bank": "A",
+    "text": "Cuando tienes un reto grande enfrente, ¿cuál es tu superpoder?",
+    "options": [
+      { "id": "A1_A", "text": "Resolverlo rápido", "tags": { "RAPIDEZ": 2, "PERFORMANCE": 2 } },
+      { "id": "A1_B", "text": "Encontrar una idea diferente", "tags": { "CREATIVIDAD": 2, "INNOVACIÓN": 2 } },
+      { "id": "A1_C", "text": "Tener todo bajo control", "tags": { "CONTROL": 2, "SEGURIDAD": 2 } },
+      { "id": "A1_D", "text": "Adaptarme sobre la marcha", "tags": { "ADAPTABILIDAD": 2, "PERSONALIZACIÓN": 2 } }
+    ]
+  },
+  {
+    "id": "A2",
+    "bank": "A",
+    "text": "Si fueras un procesador por un día, estarías optimizado para...",
+    "options": [
+      { "id": "A2_A", "text": "Máxima velocidad", "tags": { "VELOCIDAD": 2, "POTENCIA": 2 } },
+      { "id": "A2_B", "text": "Hacer muchas cosas al mismo tiempo", "tags": { "PRODUCTIVIDAD": 2, "INTEGRACIÓN": 2 } },
+      { "id": "A2_C", "text": "Trabajar desde cualquier lugar", "tags": { "MOVILIDAD": 2, "CONECTIVIDAD": 2 } },
+      { "id": "A2_D", "text": "Anticiparme a lo que viene", "tags": { "PROACTIVIDAD": 2, "IA": 2 } }
+    ]
+  },
+  {
+    "id": "A3",
+    "bank": "A",
+    "text": "Tu equipo te busca principalmente cuando necesita...",
+    "options": [
+      { "id": "A3_A", "text": "Una idea", "tags": { "CREATIVIDAD": 2, "INNOVACIÓN": 2 } },
+      { "id": "A3_B", "text": "Una solución inmediata", "tags": { "AGILIDAD": 2, "RESPUESTA": 2 } },
+      { "id": "A3_C", "text": "Orden y precisión", "tags": { "PRECISIÓN": 2, "CONTROL": 2 } },
+      { "id": "A3_D", "text": "Alguien que haga que todo funcione", "tags": { "ESTABILIDAD": 2, "DISPONIBILIDAD": 2 } }
+    ]
+  },
+  {
+    "id": "A4",
+    "bank": "A",
+    "text": "Tu modo natural de trabajar se parece más a...",
+    "options": [
+      { "id": "A4_A", "text": "Turbo", "tags": { "PERFORMANCE": 2, "RAPIDEZ": 2 } },
+      { "id": "A4_B", "text": "Flow", "tags": { "FLUIDEZ": 2, "PRODUCTIVIDAD": 2 } },
+      { "id": "A4_C", "text": "Smart", "tags": { "IA": 2, "PROACTIVIDAD": 2 } },
+      { "id": "A4_D", "text": "Secure", "tags": { "PROTECCIÓN": 2, "PREVENCIÓN": 2 } }
+    ]
+  },
+  {
+    "id": "A5",
+    "bank": "A",
+    "text": "En un proyecto nuevo eres quien...",
+    "options": [
+      { "id": "A5_A", "text": "Acelera", "tags": { "VELOCIDAD": 2, "ENERGÍA": 2 } },
+      { "id": "A5_B", "text": "Conecta", "tags": { "CONECTIVIDAD": 2, "INTEGRACIÓN": 2 } },
+      { "id": "A5_C", "text": "Optimiza", "tags": { "EFICIENCIA": 2, "OPTIMIZACIÓN": 2 } },
+      { "id": "A5_D", "text": "Personaliza", "tags": { "PERSONALIZACIÓN": 2, "ADAPTABILIDAD": 2 } }
+    ]
+  },
+  {
+    "id": "B1",
+    "bank": "B",
+    "text": "Si pudieras hacer un upgrade instantáneo a tu día, elegirías...",
+    "options": [
+      { "id": "B1_A", "text": "Más potencia", "tags": { "POTENCIA": 2, "PERFORMANCE": 2 } },
+      { "id": "B1_B", "text": "Más creatividad", "tags": { "CREATIVIDAD": 2, "RENDERIZACIÓN": 2 } },
+      { "id": "B1_C", "text": "Más tranquilidad", "tags": { "PROTECCIÓN": 2, "ESTABILIDAD": 2 } },
+      { "id": "B1_D", "text": "Más inteligencia", "tags": { "IA": 2, "ASISTENCIA": 2 } }
+    ]
+  },
+  {
+    "id": "B2",
+    "bank": "B",
+    "text": "¿Qué valoras más cuando la tecnología realmente funciona para ti?",
+    "options": [
+      { "id": "B2_A", "text": "Que responda inmediatamente", "tags": { "RAPIDEZ": 2, "RESPUESTA": 2 } },
+      { "id": "B2_B", "text": "Que todo esté conectado", "tags": { "INTEGRACIÓN": 2, "CONECTIVIDAD": 2 } },
+      { "id": "B2_C", "text": "Que se adapte a mí", "tags": { "PERSONALIZACIÓN": 2, "ADAPTABILIDAD": 2 } },
+      { "id": "B2_D", "text": "Que nunca me deje solo", "tags": { "RESPALDO": 2, "DISPONIBILIDAD": 2 } }
+    ]
+  },
+  {
+    "id": "B3",
+    "bank": "B",
+    "text": "Hoy vienes buscando una dosis extra de...",
+    "options": [
+      { "id": "B3_A", "text": "Energía", "tags": { "ENERGÍA": 2, "POTENCIA": 2 } },
+      { "id": "B3_B", "text": "Inspiración", "tags": { "CREATIVIDAD": 2, "INNOVACIÓN": 2 } },
+      { "id": "B3_C", "text": "Eficiencia", "tags": { "EFICIENCIA": 2, "OPTIMIZACIÓN": 2 } },
+      { "id": "B3_D", "text": "Control", "tags": { "CONTROL": 2, "PRECISIÓN": 2 } }
+    ]
+  },
+  {
+    "id": "B4",
+    "bank": "B",
+    "text": "En tu mundo ideal todo debería ser...",
+    "options": [
+      { "id": "B4_A", "text": "Más rápido", "tags": { "VELOCIDAD": 2, "RAPIDEZ": 2 } },
+      { "id": "B4_B", "text": "Más inteligente", "tags": { "IA": 2, "PROACTIVIDAD": 2 } },
+      { "id": "B4_C", "text": "Más seguro", "tags": { "SEGURIDAD": 2, "PROTECCIÓN": 2 } },
+      { "id": "B4_D", "text": "Más fluido", "tags": { "FLUIDEZ": 2, "INTEGRACIÓN": 2 } }
+    ]
+  },
+  {
+    "id": "B5",
+    "bank": "B",
+    "text": "Elige el upgrade que más te serviría ahora mismo:",
+    "options": [
+      { "id": "B5_A", "text": "Performance", "tags": { "PERFORMANCE": 2, "POTENCIA": 2 } },
+      { "id": "B5_B", "text": "Mobility", "tags": { "MOVILIDAD": 2, "CONECTIVIDAD": 2 } },
+      { "id": "B5_C", "text": "Support", "tags": { "RESPALDO": 2, "ASISTENCIA": 2 } },
+      { "id": "B5_D", "text": "Scale", "tags": { "ESCALABILIDAD": 2, "EFICIENCIA": 2 } }
+    ]
+  },
+  {
+    "id": "C1",
+    "bank": "C",
+    "text": "¿En qué modo quieres activar tu Lenovo LAB?",
+    "options": [
+      { "id": "C1_A", "text": "Coffee Mode", "tags": { "GROUP_COFFEE": 3 } },
+      { "id": "C1_B", "text": "Fresh Mode", "tags": { "GROUP_FRESH": 3 } },
+      { "id": "C1_C", "text": "Cocktail Mode", "tags": { "GROUP_COCKTAIL": 3 } },
+      { "id": "C1_D", "text": "Chill Mode", "tags": { "GROUP_CHILL": 3 } }
+    ]
+  },
+  {
+    "id": "C2",
+    "bank": "C",
+    "text": "Tu break perfecto se siente más...",
+    "options": [
+      { "id": "C2_A", "text": "Intenso", "tags": { "PROFILE_INTENSE": 3 } },
+      { "id": "C2_B", "text": "Refrescante", "tags": { "PROFILE_FRESH": 3 } },
+      { "id": "C2_C", "text": "Cremoso", "tags": { "PROFILE_CREAMY": 3 } },
+      { "id": "C2_D", "text": "Relax", "tags": { "PROFILE_RELAX": 3 } }
+    ]
+  },
+  {
+    "id": "C3",
+    "bank": "C",
+    "text": "¿Qué temperatura tiene tu mood?",
+    "options": [
+      { "id": "C3_A", "text": "Cold & powerful", "tags": { "PROFILE_COLD_POWER": 3 } },
+      { "id": "C3_B", "text": "Cold & fresh", "tags": { "PROFILE_COLD_FRESH": 3 } },
+      { "id": "C3_C", "text": "Hot & focused", "tags": { "PROFILE_HOT_FOCUS": 3 } },
+      { "id": "C3_D", "text": "Hot & smooth", "tags": { "PROFILE_HOT_SMOOTH": 3 } }
+    ]
+  },
+  {
+    "id": "C4",
+    "bank": "C",
+    "text": "Tu Lenovo LAB necesita hoy algo...",
+    "options": [
+      { "id": "C4_A", "text": "Fuerte", "tags": { "PROFILE_STRONG": 3 } },
+      { "id": "C4_B", "text": "Refrescante", "tags": { "PROFILE_REFRESHING": 3 } },
+      { "id": "C4_C", "text": "Suave", "tags": { "PROFILE_SMOOTH": 3 } },
+      { "id": "C4_D", "text": "Diferente", "tags": { "PROFILE_DIFFERENT": 3 } }
+    ]
+  }
+]
