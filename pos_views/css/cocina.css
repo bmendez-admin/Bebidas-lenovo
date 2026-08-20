@@ -1,0 +1,285 @@
+body.kds-body {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.kds-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4vh 3vw;
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.kds-title {
+  font-weight: 800;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kds-count-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+.kds-count-label {
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+}
+
+.kds-count {
+  font-weight: 800;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  background: var(--red-signature);
+  border-radius: 999px;
+  min-width: 2.4em;
+  text-align: center;
+  padding: 0.5vh 0.9vw;
+  box-shadow: 0 0 18px rgba(225, 37, 27, 0.55);
+}
+
+.kds-layout {
+  display: flex;
+  height: calc(100vh - 88px);
+}
+
+.kds-queue {
+  width: 340px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding: 2.4vh 1.4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.kds-queue-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.8vh 1.3vw;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.kds-queue-card.is-new {
+  animation: kds-card-in 0.3s ease;
+}
+
+@keyframes kds-card-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kds-queue-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--urgency-color, var(--red-signature));
+}
+
+.kds-queue-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.kds-queue-card.is-selected {
+  background: rgba(122, 18, 107, 0.28);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.kds-queue-processing-badge {
+  display: none;
+  font-weight: 800;
+  font-size: clamp(0.65rem, 0.85vw, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  background: var(--purple-deep-2);
+  border-radius: 6px;
+  padding: 0.3vh 0.8vw;
+  margin-bottom: 1vh;
+}
+
+.kds-queue-card.is-preparing .kds-queue-processing-badge {
+  display: inline-block;
+}
+
+.kds-queue-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+.kds-queue-number {
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.kds-queue-time {
+  font-weight: 700;
+  font-size: clamp(0.75rem, 0.95vw, 0.85rem);
+  color: var(--urgency-color, rgba(255, 255, 255, 0.6));
+}
+
+.kds-queue-name {
+  font-weight: 800;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  margin-bottom: 0.3vh;
+}
+
+.kds-queue-drink {
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1.1vw, 0.95rem);
+  opacity: 0.8;
+}
+
+.kds-detail {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 4vw;
+}
+
+.kds-detail-empty {
+  text-align: center;
+  opacity: 0.45;
+}
+
+.kds-detail-content {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.kds-detail-eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  opacity: 0.7;
+  margin-bottom: 1vh;
+}
+
+.kds-detail-image {
+  width: clamp(180px, 24vw, 260px);
+  height: clamp(180px, 24vw, 260px);
+  object-fit: contain;
+  margin: 0 auto 3vh;
+  display: block;
+}
+
+.kds-detail-drink {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 1.4vh;
+  line-height: 1.1;
+}
+
+.kds-detail-customer {
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  opacity: 0.85;
+  margin-bottom: 3vh;
+}
+
+.kds-detail-customer strong {
+  font-weight: 800;
+}
+
+.kds-detail-ingredients-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  opacity: 0.7;
+  margin-bottom: 1.4vh;
+}
+
+.kds-detail-ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vh 0.8vw;
+  margin-bottom: 4vh;
+}
+
+.kds-ingredient-pill {
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.8vh 1.6vw;
+}
+
+.kds-complete-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+  font-family: var(--font-brand);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  color: var(--white);
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 999px;
+  padding: 2vh 2vw;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
+  transition: transform 0.12s ease;
+}
+
+.kds-complete-button:active {
+  transform: scale(0.97);
+}
+
+.kds-complete-button svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.kds-empty {
+  text-align: center;
+  padding-top: 8vh;
+  opacity: 0.5;
+}
+
+.kds-empty-icon-svg {
+  width: clamp(40px, 4vw, 56px);
+  height: clamp(40px, 4vw, 56px);
+  margin: 0 auto 2vh;
+  display: block;
+  opacity: 0.5;
+}
+
+.kds-empty-text {
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  font-weight: 500;
+}
+
+.kds-queue-hint {
+  text-align: center;
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  font-weight: 600;
+  opacity: 0.55;
+  padding-top: 1vh;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenovo LAB — Cocina/Barra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="css/cocina.css" />
+</head>
+<body class="bg-gradient-deep kds-body">
+  <div class="kds-header">
+    <span class="kds-title">Lenovo LAB — Cocina / Barra</span>
+    <div class="kds-count-wrap">
+      <span class="kds-count-label">Pendientes</span>
+      <span class="kds-count" id="kds-count">0</span>
+    </div>
+  </div>
+
+  <div class="kds-layout">
+    <div class="kds-queue" id="kds-queue">
+      <div class="kds-empty">
+        <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h14l-2 12H7L5 3z"/><path d="M9 15v4a1 1 0 001 1h4a1 1 0 001-1v-4"/></svg>
+        <p class="kds-empty-text">Cargando pedidos...</p>
+      </div>
+    </div>
+
+    <div class="kds-detail" id="kds-detail">
+      <div class="kds-detail-empty">
+        <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+        <p class="kds-empty-text">Selecciona un pedido de la cola</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/config.js"></script>
+  <script src="js/cocina.js"></script>
+</body>
+</html>
