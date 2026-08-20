@@ -37,6 +37,7 @@ function scoreDrinks(eligibleDrinks, tagsA, tagsB, moodTag) {
       if (drink.tags.includes(tag)) score += value;
     }
     if (favoredByMood.includes(drink.id)) score += 3;
+    if (drink.alcoholic) score += 2;
 
     return { ...drink, score };
   });
