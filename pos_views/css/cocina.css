@@ -283,3 +283,35 @@ body.kds-body {
   opacity: 0.55;
   padding-top: 1vh;
 }
+
+.kds-cancel-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6vw;
+  font-family: var(--font-brand);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 1.3vh 2vw;
+  margin-top: 1.4vh;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.kds-cancel-button:hover {
+  color: var(--red-mid-3);
+  border-color: var(--red-signature);
+  background: rgba(225, 37, 27, 0.08);
+}
+
+.kds-cancel-button svg {
+  width: 1em;
+  height: 1em;
+}

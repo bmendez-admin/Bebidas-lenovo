@@ -134,3 +134,22 @@
     margin: 0 0 1.5vh;
   }
 }
+
+.result-reject-button {
+  display: block;
+  margin: 2vh auto 0;
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  padding: 1vh 1vw;
+}
+
+.result-reject-button:active {
+  color: rgba(255, 255, 255, 0.85);
+}

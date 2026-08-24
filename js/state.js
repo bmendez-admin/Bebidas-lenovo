@@ -3,6 +3,7 @@ let state = null;
 function resetSession() {
   state = {
     leadInfo: null,
+    orderId: null,
     allowAlcohol: null,
     questions: { A: null, B: null, C: null },
     answers: { A: null, B: null, C: null },
@@ -15,6 +16,10 @@ function resetSession() {
 
 function setLeadInfo(leadInfo) {
   state.leadInfo = leadInfo;
+}
+
+function setOrderId(orderId) {
+  state.orderId = orderId;
 }
 
 function setAlcoholFilter(allow) {
@@ -61,6 +66,7 @@ resetSession();
 window.SessionState = {
   resetSession,
   setLeadInfo,
+  setOrderId,
   setAlcoholFilter,
   pickQuestion,
   recordAnswer,

@@ -212,5 +212,22 @@
       "Frío"
     ],
     "keyIngredient": "Cerveza"
+  },
+  {
+    "id": "DR12",
+    "name": "Nyla Dry",
+    "baseDrink": "Canada Dry",
+    "poweredBy": "Nutanix",
+    "alcoholic": false,
+    "tags": [
+      "ENERGÍA",
+      "FRESCURA",
+      "CONECTIVIDAD"
+    ],
+    "ingredients": [
+      "Canada Dry",
+      "Hielo"
+    ],
+    "keyIngredient": "Canada Dry"
   }
 ]

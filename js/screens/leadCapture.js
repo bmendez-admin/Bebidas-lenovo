@@ -7,6 +7,7 @@ function renderLeadCapture(container, onNext) {
       <form class="lead-form" id="lead-form">
         <input class="lead-input" type="text" name="nombre" placeholder="Nombre" required />
         <input class="lead-input" type="text" name="apellido" placeholder="Apellido" required />
+        <input class="lead-input" type="text" name="empresa" placeholder="Empresa" required />
         <input class="lead-input" type="email" name="correo" placeholder="Correo" required />
         <input class="lead-input" type="tel" name="telefono" placeholder="Teléfono" required />
       </form>
@@ -17,6 +18,21 @@ function renderLeadCapture(container, onNext) {
 
   const form = container.querySelector("#lead-form");
   const errorEl = container.querySelector("#lead-error");
+  const inputs = Array.from(form.querySelectorAll(".lead-input"));
+
+  inputs[0].focus();
+
+  inputs.forEach((input, index) => {
+    input.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      e.preventDefault();
+      if (index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      } else {
+        container.querySelector("#btn-lead-continue").click();
+      }
+    });
+  });
 
   container.querySelector("#btn-lead-continue").addEventListener("click", () => {
     if (!form.reportValidity()) {
@@ -28,6 +44,7 @@ function renderLeadCapture(container, onNext) {
     const leadInfo = {
       nombre: formData.get("nombre"),
       apellido: formData.get("apellido"),
+      empresa: formData.get("empresa"),
       correo: formData.get("correo"),
       telefono: formData.get("telefono"),
     };
@@ -51,7 +68,21 @@ function submitLead(payload) {
   }).catch(() => {});
 }
 
-window.Leads = { submitLead };
+function actualizarEstadoPedido(id, estado) {
+  const url = window.CONFIG.LEADS_ENDPOINT_URL;
+  if (!url || !id) return;
+
+  const body = new URLSearchParams({ action: "actualizar_pedido", id, estado });
+
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: body.toString(),
+  }).catch(() => {});
+}
+
+window.Leads = { submitLead, actualizarEstadoPedido };
 
 window.Screens = window.Screens || {};
 window.Screens.leadCapture = renderLeadCapture;

@@ -1,6 +1,7 @@
-const POLL_INTERVAL_MS = 4000;
+const POLL_INTERVAL_MS = 10000;
 const MAX_VISIBLE_COLA = 6;
 const CHECK_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>`;
+const CANCEL_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>`;
 
 let DRINKS_BY_NAME = {};
 let queueElements = new Map();
@@ -182,6 +183,7 @@ function renderDetalle(pedido) {
         </div>
       ` : ""}
       <button class="kds-complete-button" id="btn-complete">${CHECK_ICON} Pedido listo</button>
+      <button class="kds-cancel-button" id="btn-cancel">${CANCEL_ICON} Cancelar pedido</button>
     </div>
   `;
 
@@ -191,36 +193,46 @@ function renderDetalle(pedido) {
   }
 
   document.getElementById("btn-complete").addEventListener("click", () => {
-    localmenteEntregados.add(pedido.id);
-    actualizarEstadoPedido(pedido.id, "listo");
-
-    const el = queueElements.get(pedido.id);
-    if (el) el.remove();
-    queueElements.delete(pedido.id);
-
-    if (selectedId === pedido.id) {
-      selectedId = null;
-      detail.innerHTML = `
-        <div class="kds-detail-empty">
-          <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
-          <p class="kds-empty-text">Selecciona un pedido de la cola</p>
-        </div>
-      `;
-    }
-
-    const count = document.getElementById("kds-count");
-    ultimoTotalPendientes = Math.max(0, ultimoTotalPendientes - 1);
-    count.textContent = ultimoTotalPendientes;
-
-    if (queueElements.size === 0 && ultimoTotalPendientes === 0) {
-      document.getElementById("kds-queue").innerHTML = `
-        <div class="kds-empty">
-          <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h14l-2 12H7L5 3z"/><path d="M9 15v4a1 1 0 001 1h4a1 1 0 001-1v-4"/></svg>
-          <p class="kds-empty-text">Sin pedidos pendientes</p>
-        </div>
-      `;
-    }
+    retirarPedidoDeCola(pedido, "listo");
   });
+
+  document.getElementById("btn-cancel").addEventListener("click", () => {
+    if (!confirm(`¿Cancelar el pedido de ${pedido.nombre} (${pedido.bebida})? Esta acción no se puede deshacer.`)) return;
+    retirarPedidoDeCola(pedido, "cancelado");
+  });
+}
+
+function retirarPedidoDeCola(pedido, nuevoEstado) {
+  const detail = document.getElementById("kds-detail");
+  localmenteEntregados.add(pedido.id);
+  actualizarEstadoPedido(pedido.id, nuevoEstado);
+
+  const el = queueElements.get(pedido.id);
+  if (el) el.remove();
+  queueElements.delete(pedido.id);
+
+  if (selectedId === pedido.id) {
+    selectedId = null;
+    detail.innerHTML = `
+      <div class="kds-detail-empty">
+        <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+        <p class="kds-empty-text">Selecciona un pedido de la cola</p>
+      </div>
+    `;
+  }
+
+  const count = document.getElementById("kds-count");
+  ultimoTotalPendientes = Math.max(0, ultimoTotalPendientes - 1);
+  count.textContent = ultimoTotalPendientes;
+
+  if (queueElements.size === 0 && ultimoTotalPendientes === 0) {
+    document.getElementById("kds-queue").innerHTML = `
+      <div class="kds-empty">
+        <svg class="kds-empty-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3h14l-2 12H7L5 3z"/><path d="M9 15v4a1 1 0 001 1h4a1 1 0 001-1v-4"/></svg>
+        <p class="kds-empty-text">Sin pedidos pendientes</p>
+      </div>
+    `;
+  }
 }
 
 async function iniciarPolling() {

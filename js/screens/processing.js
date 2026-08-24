@@ -17,11 +17,13 @@ function renderProcessing(container, onNext) {
   const state = window.SessionState.getState();
   if (state.leadInfo) {
     const orderId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    window.SessionState.setOrderId(orderId);
     window.Leads.submitLead({
       action: "registrar",
       id: orderId,
       nombre: state.leadInfo.nombre,
       apellido: state.leadInfo.apellido,
+      empresa: state.leadInfo.empresa,
       correo: state.leadInfo.correo,
       telefono: state.leadInfo.telefono,
       bebida: state.selectedDrink.name,

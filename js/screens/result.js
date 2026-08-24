@@ -1,4 +1,4 @@
-function renderResult(container, onNext) {
+function renderResult(container, onAccept, onReject) {
   const state = window.SessionState.getState();
   const drink = state.selectedDrink;
 
@@ -25,6 +25,7 @@ function renderResult(container, onNext) {
         </div>
       </div>
       <button class="cta-button" id="btn-accept">Aceptar bebida</button>
+      <button class="result-reject-button" id="btn-reject">No me gusta, elegir otra vez</button>
     </div>
   `;
 
@@ -36,7 +37,14 @@ function renderResult(container, onNext) {
     };
   });
 
-  container.querySelector("#btn-accept").addEventListener("click", onNext);
+  container.querySelector("#btn-accept").addEventListener("click", onAccept);
+
+  container.querySelector("#btn-reject").addEventListener("click", () => {
+    if (state.orderId) {
+      window.Leads.actualizarEstadoPedido(state.orderId, "cancelado");
+    }
+    onReject();
+  });
 }
 
 window.Screens = window.Screens || {};

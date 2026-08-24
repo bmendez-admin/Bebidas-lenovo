@@ -32,7 +32,12 @@ function goToProcessing() {
 }
 
 function goToResult() {
-  window.Router.goTo("result", goToClosing);
+  window.Router.goTo("result", goToClosing, goToReintentar);
+}
+
+function goToReintentar() {
+  window.SessionState.resetSession();
+  goToWelcome();
 }
 
 function goToClosing() {

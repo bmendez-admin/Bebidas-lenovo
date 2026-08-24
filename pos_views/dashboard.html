@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" class="dashboard-html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenovo LAB — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body class="bg-gradient-deep dashboard-body">
+  <div class="dash-header">
+    <span class="dash-title">Lenovo LAB — Dashboard</span>
+    <div class="dash-header-right">
+      <span class="dash-updated" id="dash-updated"></span>
+      <button class="dash-export-button" id="btn-export">Exportar Excel</button>
+      <button class="dash-refresh-button" id="btn-refresh">Actualizar</button>
+    </div>
+  </div>
+
+  <div class="dash-body">
+    <p class="dash-section-title">Resumen general</p>
+    <div class="dash-kpi-grid">
+      <div class="dash-kpi-card">
+        <div class="dash-kpi-value" id="kpi-total">0</div>
+        <div class="dash-kpi-label">Total de interacciones</div>
+      </div>
+      <div class="dash-kpi-card is-listo">
+        <div class="dash-kpi-value" id="kpi-listo">0</div>
+        <div class="dash-kpi-label">Completados</div>
+      </div>
+      <div class="dash-kpi-card is-cancelado">
+        <div class="dash-kpi-value" id="kpi-cancelado">0</div>
+        <div class="dash-kpi-label">Cancelados</div>
+      </div>
+      <div class="dash-kpi-card is-progreso">
+        <div class="dash-kpi-value" id="kpi-progreso">0</div>
+        <div class="dash-kpi-label">En progreso</div>
+      </div>
+    </div>
+    <p class="dash-qa-note" id="dash-qa-note"></p>
+
+    <p class="dash-section-title">Bebidas y estado</p>
+    <div class="dash-charts-grid">
+      <div class="dash-card">
+        <p class="dash-card-title">Ranking de bebidas más pedidas</p>
+        <div id="ranking-bebidas"></div>
+      </div>
+      <div class="dash-card">
+        <p class="dash-card-title">Estado de los pedidos</p>
+        <div class="dash-donut-wrap">
+          <div class="dash-donut" id="donut-estado"></div>
+          <div class="dash-legend" id="legend-estado"></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="dash-section-title">Actividad</p>
+    <div class="dash-charts-grid">
+      <div class="dash-card">
+        <p class="dash-card-title">Actividad por hora</p>
+        <div class="dash-vbar-wrap" id="actividad-hora"></div>
+      </div>
+      <div class="dash-card">
+        <p class="dash-card-title">Con alcohol vs sin alcohol</p>
+        <div class="dash-donut-wrap">
+          <div class="dash-donut" id="donut-alcohol"></div>
+          <div class="dash-legend" id="legend-alcohol"></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="dash-section-title">Actividad reciente</p>
+    <div class="dash-card">
+      <div class="dash-timeline" id="dash-timeline"></div>
+    </div>
+  </div>
+
+  <script src="../js/config.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
