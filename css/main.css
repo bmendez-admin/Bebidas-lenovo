@@ -75,8 +75,8 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
-  width: clamp(30px, 3.2vw, 46px);
-  height: clamp(90px, 11vh, 150px);
+  width: clamp(36px, 4vw, 52px);
+  height: clamp(110px, 14vh, 170px);
   background: var(--red-signature);
   display: flex;
   align-items: center;
@@ -85,13 +85,12 @@ html, body {
   z-index: 5;
 }
 
-.side-tab span {
-  color: var(--white);
-  font-weight: 800;
-  font-size: clamp(0.8rem, 1.3vw, 1.05rem);
-  letter-spacing: 0.06em;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+.side-tab-logo {
+  width: clamp(80px, 10vh, 130px);
+  height: auto;
+  object-fit: contain;
+  transform: rotate(270deg);
+  display: block;
 }
 
 .top-label {
