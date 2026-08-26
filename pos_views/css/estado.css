@@ -41,12 +41,18 @@ body.estado-body {
 .estado-column-header {
   display: flex;
   align-items: center;
+  gap: 8px;
   gap: 0.8vw;
+  padding: 18px 20px 13px;
   padding: 2.2vh 2.4vw 1.6vh;
   flex-shrink: 0;
 }
 
 .estado-column-icon {
+  width: 22px;
+  height: 22px;
+  max-width: 22px;
+  max-height: 22px;
   width: clamp(20px, 1.6vw, 26px);
   height: clamp(20px, 1.6vw, 26px);
   color: var(--red-mid-3);
@@ -77,6 +83,7 @@ body.estado-body {
   padding: 0 2.4vw 3vh;
   display: flex;
   flex-direction: column;
+  gap: 14px;
   gap: 1.6vh;
 }
 
@@ -84,10 +91,12 @@ body.estado-body {
   position: relative;
   display: flex;
   align-items: center;
+  gap: 14px;
   gap: 1.4vw;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
+  padding: 14px 14px;
   padding: 1.6vh 1.6vw;
   overflow: hidden;
   transition: background 0.3s ease, border-color 0.3s ease;
@@ -103,10 +112,15 @@ body.estado-body {
 }
 
 .estado-card-image {
+  width: 64px;
+  height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   width: clamp(52px, 5vw, 68px);
   height: clamp(52px, 5vw, 68px);
   object-fit: contain;
   flex-shrink: 0;
+  display: block;
 }
 
 .estado-card-body {
@@ -140,6 +154,7 @@ body.estado-body {
   letter-spacing: 0.03em;
   font-size: clamp(0.68rem, 0.85vw, 0.78rem);
   border-radius: 999px;
+  padding: 4px 10px;
   padding: 0.4vh 1vw;
 }
 
@@ -156,7 +171,6 @@ body.estado-body {
   margin-left: 0.8em;
 }
 
-/* Estado: pendiente */
 .estado-card.is-pendiente {
   opacity: 0.6;
 }
@@ -166,7 +180,6 @@ body.estado-body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Estado: en preparación */
 .estado-card.is-preparando {
   opacity: 1;
   background: rgba(225, 37, 27, 0.14);
@@ -192,7 +205,6 @@ body.estado-body {
   display: block;
 }
 
-/* Estado: listo */
 .estado-card.is-listo {
   background: rgba(74, 222, 128, 0.14);
   border-color: rgba(74, 222, 128, 0.55);
@@ -219,6 +231,10 @@ body.estado-body {
 }
 
 .estado-empty-icon-svg {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   width: clamp(40px, 4vw, 56px);
   height: clamp(40px, 4vw, 56px);
   margin: 0 auto 1.6vh;
