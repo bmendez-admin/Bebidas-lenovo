@@ -7,7 +7,7 @@ body.estado-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3vh 3vw 2.4vh;
+  padding: 32px 58px 26px;
   text-align: center;
   background: rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -15,7 +15,7 @@ body.estado-body {
 
 .estado-title {
   font-weight: 300;
-  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  font-size: 34px;
 }
 
 .estado-title strong {
@@ -41,20 +41,16 @@ body.estado-body {
 .estado-column-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  gap: 0.8vw;
-  padding: 18px 20px 13px;
-  padding: 2.2vh 2.4vw 1.6vh;
+  gap: 10px;
+  padding: 20px 24px 16px;
   flex-shrink: 0;
 }
 
 .estado-column-icon {
-  width: 22px;
-  height: 22px;
-  max-width: 22px;
-  max-height: 22px;
-  width: clamp(20px, 1.6vw, 26px);
-  height: clamp(20px, 1.6vw, 26px);
+  width: 24px;
+  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
   color: var(--red-mid-3);
   flex-shrink: 0;
 }
@@ -63,41 +59,38 @@ body.estado-body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: 18px;
 }
 
 .estado-column-count {
   font-weight: 800;
-  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-size: 15px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 999px;
   min-width: 2em;
   text-align: center;
-  padding: 0.3vh 0.8vw;
+  padding: 4px 12px;
   margin-left: auto;
 }
 
 .estado-cards {
   flex: 1;
   overflow-y: auto;
-  padding: 0 2.4vw 3vh;
+  padding: 0 24px 32px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  gap: 1.6vh;
+  gap: 22px;
 }
 
 .estado-card {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 14px;
-  gap: 1.4vw;
+  gap: 22px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
-  padding: 14px 14px;
-  padding: 1.6vh 1.6vw;
+  padding: 20px 22px;
   overflow: hidden;
   transition: background 0.3s ease, border-color 0.3s ease;
 }
@@ -112,12 +105,10 @@ body.estado-body {
 }
 
 .estado-card-image {
-  width: 64px;
-  height: 64px;
-  max-width: 64px;
-  max-height: 64px;
-  width: clamp(52px, 5vw, 68px);
-  height: clamp(52px, 5vw, 68px);
+  width: 68px;
+  height: 68px;
+  max-width: 68px;
+  max-height: 68px;
   object-fit: contain;
   flex-shrink: 0;
   display: block;
@@ -130,9 +121,9 @@ body.estado-body {
 
 .estado-card-drink {
   font-weight: 800;
-  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-size: 20px;
   line-height: 1.15;
-  margin-bottom: 0.3vh;
+  margin-bottom: 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -140,35 +131,34 @@ body.estado-body {
 
 .estado-card-customer {
   font-weight: 500;
-  font-size: clamp(0.85rem, 1.1vw, 0.98rem);
+  font-size: 15px;
   opacity: 0.75;
-  margin-bottom: 0.8vh;
+  margin-bottom: 10px;
 }
 
 .estado-status-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.4em;
+  gap: 6px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  font-size: clamp(0.68rem, 0.85vw, 0.78rem);
+  font-size: 12px;
   border-radius: 999px;
-  padding: 4px 10px;
-  padding: 0.4vh 1vw;
+  padding: 5px 12px;
 }
 
 .estado-status-pill svg {
-  width: 1.1em;
-  height: 1.1em;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
 }
 
 .estado-card-time {
   font-weight: 600;
-  font-size: clamp(0.72rem, 0.95vw, 0.85rem);
+  font-size: 13px;
   opacity: 0.65;
-  margin-left: 0.8em;
+  margin-left: 10px;
 }
 
 .estado-card.is-pendiente {
@@ -217,13 +207,13 @@ body.estado-body {
 
 .estado-empty {
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 86px;
   opacity: 0.4;
 }
 
 .estado-empty-icon {
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  margin-bottom: 1.6vh;
+  font-size: 40px;
+  margin-bottom: 17px;
 }
 
 .estado-column:last-child .estado-column-icon {
@@ -231,19 +221,17 @@ body.estado-body {
 }
 
 .estado-empty-icon-svg {
-  width: 48px;
-  height: 48px;
-  max-width: 48px;
-  max-height: 48px;
-  width: clamp(40px, 4vw, 56px);
-  height: clamp(40px, 4vw, 56px);
-  margin: 0 auto 1.6vh;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 auto 17px;
   display: block;
   opacity: 0.5;
 }
 
 .estado-empty-text {
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  font-size: 17px;
 }
 
 .estado-card.is-leaving {
@@ -258,8 +246,94 @@ body.estado-body {
 
 .estado-queue-hint {
   text-align: center;
-  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  font-size: 15px;
   font-weight: 600;
   opacity: 0.55;
-  padding-top: 1vh;
+  padding-top: 11px;
+}
+
+@media (orientation: portrait) {
+  .estado-header {
+    padding: 44px 32px 30px;
+  }
+
+  .estado-title {
+    font-size: 30px;
+  }
+
+  .estado-columns {
+    height: calc(100vh - 122px);
+  }
+
+  .estado-column-header {
+    gap: 10px;
+    padding: 22px 22px 16px;
+  }
+
+  .estado-column-icon {
+    width: 22px;
+    height: 22px;
+    max-width: 22px;
+    max-height: 22px;
+  }
+
+  .estado-column-title {
+    font-size: 16px;
+  }
+
+  .estado-column-count {
+    font-size: 14px;
+    padding: 4px 11px;
+  }
+
+  .estado-cards {
+    padding: 0 20px 28px;
+    gap: 20px;
+  }
+
+  .estado-card {
+    gap: 18px;
+    padding: 18px 18px;
+  }
+
+  .estado-card-image {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .estado-card-drink {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .estado-card-customer {
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+
+  .estado-status-pill {
+    font-size: 11px;
+    padding: 5px 11px;
+  }
+
+  .estado-card-time {
+    font-size: 12px;
+  }
+
+  .estado-empty {
+    padding-top: 70px;
+  }
+
+  .estado-empty-icon-svg {
+    width: 46px;
+    height: 46px;
+    max-width: 46px;
+    max-height: 46px;
+  }
+
+  .estado-empty-text {
+    font-size: 16px;
+  }
 }
