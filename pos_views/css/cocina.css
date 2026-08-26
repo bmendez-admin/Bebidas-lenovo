@@ -7,7 +7,7 @@ body.kds-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.4vh 3vw;
+  padding: 26px 58px;
   background: rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
@@ -15,7 +15,7 @@ body.kds-body {
 
 .kds-title {
   font-weight: 800;
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -23,11 +23,11 @@ body.kds-body {
 .kds-count-wrap {
   display: flex;
   align-items: center;
-  gap: 0.8vw;
+  gap: 15px;
 }
 
 .kds-count-label {
-  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   opacity: 0.75;
@@ -35,12 +35,12 @@ body.kds-body {
 
 .kds-count {
   font-weight: 800;
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-size: 20px;
   background: var(--red-signature);
   border-radius: 999px;
   min-width: 2.4em;
   text-align: center;
-  padding: 0.5vh 0.9vw;
+  padding: 6px 16px;
   box-shadow: 0 0 18px rgba(225, 37, 27, 0.55);
 }
 
@@ -53,10 +53,10 @@ body.kds-body {
   width: 340px;
   flex-shrink: 0;
   overflow-y: auto;
-  padding: 2.4vh 1.4vw;
+  padding: 26px 22px;
   display: flex;
   flex-direction: column;
-  gap: 1.6vh;
+  gap: 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -65,7 +65,7 @@ body.kds-body {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  padding: 1.8vh 1.3vw;
+  padding: 20px 22px;
   cursor: pointer;
   overflow: hidden;
   transition: background 0.15s ease, border-color 0.15s ease;
@@ -102,14 +102,14 @@ body.kds-body {
 .kds-queue-processing-badge {
   display: none;
   font-weight: 800;
-  font-size: clamp(0.65rem, 0.85vw, 0.75rem);
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--white);
   background: var(--purple-deep-2);
   border-radius: 6px;
-  padding: 0.3vh 0.8vw;
-  margin-bottom: 1vh;
+  padding: 4px 12px;
+  margin-bottom: 10px;
 }
 
 .kds-queue-card.is-preparing .kds-queue-processing-badge {
@@ -120,30 +120,30 @@ body.kds-body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 1vh;
+  margin-bottom: 10px;
 }
 
 .kds-queue-number {
   font-weight: 800;
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .kds-queue-time {
   font-weight: 700;
-  font-size: clamp(0.75rem, 0.95vw, 0.85rem);
+  font-size: 13px;
   color: var(--urgency-color, rgba(255, 255, 255, 0.6));
 }
 
 .kds-queue-name {
   font-weight: 800;
-  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
-  margin-bottom: 0.3vh;
+  font-size: 19px;
+  margin-bottom: 4px;
 }
 
 .kds-queue-drink {
   font-weight: 500;
-  font-size: clamp(0.85rem, 1.1vw, 0.95rem);
+  font-size: 15px;
   opacity: 0.8;
 }
 
@@ -153,7 +153,7 @@ body.kds-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4vh 4vw;
+  padding: 42px 60px;
 }
 
 .kds-detail-empty {
@@ -171,30 +171,32 @@ body.kds-body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-size: 15px;
   opacity: 0.7;
-  margin-bottom: 1vh;
+  margin-bottom: 10px;
 }
 
 .kds-detail-image {
-  width: clamp(180px, 24vw, 260px);
-  height: clamp(180px, 24vw, 260px);
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
   object-fit: contain;
-  margin: 0 auto 3vh;
+  margin: 0 auto 30px;
   display: block;
 }
 
 .kds-detail-drink {
   font-weight: 800;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  margin-bottom: 1.4vh;
+  font-size: 40px;
+  margin-bottom: 15px;
   line-height: 1.1;
 }
 
 .kds-detail-customer {
-  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-size: 21px;
   opacity: 0.85;
-  margin-bottom: 3vh;
+  margin-bottom: 32px;
 }
 
 .kds-detail-customer strong {
@@ -205,26 +207,26 @@ body.kds-body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  font-size: 15px;
   opacity: 0.7;
-  margin-bottom: 1.4vh;
+  margin-bottom: 15px;
 }
 
 .kds-detail-ingredients {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1vh 0.8vw;
-  margin-bottom: 4vh;
+  gap: 11px 15px;
+  margin-bottom: 42px;
 }
 
 .kds-ingredient-pill {
-  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  font-size: 16px;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
-  padding: 0.8vh 1.6vw;
+  padding: 9px 26px;
 }
 
 .kds-complete-button {
@@ -232,17 +234,17 @@ body.kds-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8vw;
+  gap: 15px;
   font-family: var(--font-brand);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  font-size: 20px;
   color: var(--white);
   background: linear-gradient(90deg, #22c55e, #16a34a);
   border: none;
   border-radius: 999px;
-  padding: 2vh 2vw;
+  padding: 22px 32px;
   cursor: pointer;
   box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
   transition: transform 0.12s ease;
@@ -259,29 +261,31 @@ body.kds-body {
 
 .kds-empty {
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 86px;
   opacity: 0.5;
 }
 
 .kds-empty-icon-svg {
-  width: clamp(40px, 4vw, 56px);
-  height: clamp(40px, 4vw, 56px);
-  margin: 0 auto 2vh;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 auto 22px;
   display: block;
   opacity: 0.5;
 }
 
 .kds-empty-text {
-  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  font-size: 18px;
   font-weight: 500;
 }
 
 .kds-queue-hint {
   text-align: center;
-  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  font-size: 15px;
   font-weight: 600;
   opacity: 0.55;
-  padding-top: 1vh;
+  padding-top: 11px;
 }
 
 .kds-cancel-button {
@@ -289,18 +293,18 @@ body.kds-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6vw;
+  gap: 10px;
   font-family: var(--font-brand);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
-  padding: 1.3vh 2vw;
-  margin-top: 1.4vh;
+  padding: 14px 32px;
+  margin-top: 15px;
   cursor: pointer;
   transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
@@ -314,4 +318,95 @@ body.kds-body {
 .kds-cancel-button svg {
   width: 1em;
   height: 1em;
+}
+
+@media (orientation: portrait) {
+  .kds-header {
+    padding: 22px 26px;
+  }
+
+  .kds-title {
+    font-size: 18px;
+  }
+
+  .kds-count-wrap {
+    gap: 10px;
+  }
+
+  .kds-count-label {
+    font-size: 12px;
+  }
+
+  .kds-count {
+    font-size: 15px;
+    padding: 5px 13px;
+  }
+
+  .kds-layout {
+    flex-direction: column;
+    height: calc(100vh - 76px);
+  }
+
+  .kds-queue {
+    width: 100%;
+    max-height: 40vh;
+    padding: 18px 18px;
+    gap: 14px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .kds-queue-card {
+    padding: 16px 18px;
+  }
+
+  .kds-queue-name {
+    font-size: 17px;
+  }
+
+  .kds-queue-drink {
+    font-size: 14px;
+  }
+
+  .kds-detail {
+    padding: 30px 26px;
+  }
+
+  .kds-detail-image {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto 22px;
+  }
+
+  .kds-detail-drink {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .kds-detail-customer {
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+
+  .kds-detail-ingredients {
+    gap: 9px 12px;
+    margin-bottom: 30px;
+  }
+
+  .kds-ingredient-pill {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .kds-complete-button {
+    font-size: 17px;
+    padding: 18px 26px;
+  }
+
+  .kds-cancel-button {
+    font-size: 14px;
+    padding: 12px 26px;
+  }
 }
