@@ -86,8 +86,8 @@ html, body {
 }
 
 .side-tab-logo {
-  width: clamp(80px, 10vh, 130px);
-  height: auto;
+  width: 100px;
+  height: 60px;
   object-fit: contain;
   transform: rotate(270deg);
   display: block;
@@ -105,8 +105,8 @@ html, body {
 }
 
 .brand-logo {
-  width: clamp(140px, 22vw, 320px);
-  height: auto;
+  width: 400px;
+  height: 150px;
   margin-bottom: 4vh;
 }
 
