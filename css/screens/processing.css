@@ -1,12 +1,12 @@
 .processing-spinner {
   display: flex;
-  gap: 1.2vw;
-  margin-top: 4vh;
+  gap: 23px;
+  margin-top: 43px;
 }
 
 .processing-dot {
-  width: clamp(14px, 1.4vw, 22px);
-  height: clamp(14px, 1.4vw, 22px);
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--red-signature);
   animation: processing-bounce 1s infinite ease-in-out;

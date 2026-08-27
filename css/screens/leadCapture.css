@@ -1,19 +1,19 @@
 .lead-form {
   display: flex;
   flex-direction: column;
-  gap: 1.6vh;
+  gap: 20px;
   width: min(55vw, 720px);
-  margin-bottom: 4vh;
+  margin-bottom: 48px;
 }
 
 .lead-input {
   font-family: var(--font-brand);
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-size: 18px;
   color: var(--white);
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 14px;
-  padding: 1.6vh 1.5vw;
+  padding: 17px 16px;
   outline: none;
   transition: border-color 0.15s ease, background 0.15s ease;
 }
@@ -29,8 +29,8 @@
 
 .lead-error {
   color: var(--red-mid-3);
-  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+  font-size: 15px;
   font-weight: 700;
-  min-height: 2.4vh;
-  margin-bottom: 1vh;
+  min-height: 26px;
+  margin-bottom: 11px;
 }

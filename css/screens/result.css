@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 3vh;
+  margin-bottom: 32px;
 }
 
 .result-info {
@@ -22,14 +22,14 @@
   width: 350px;
   height: 350px;
   object-fit: contain;
-  margin: 2vh 0 1.5vh;
+  margin: 22px 0 16px;
 }
 
 .result-visual.no-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 52px;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.85);
   background: linear-gradient(135deg, var(--red-mid-2), var(--purple-deep-2));
@@ -40,65 +40,65 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  font-size: 15px;
   opacity: 0.85;
-  margin-bottom: 1.4vh;
+  margin-bottom: 15px;
 }
 
 .result-ingredient-pill {
   display: inline-block;
-  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  font-size: 26px;
   font-weight: 800;
   color: var(--white);
   border: 1.5px solid rgba(255, 255, 255, 0.4);
   border-radius: 14px;
-  padding: 1.2vh 3vw;
-  margin-bottom: 3vh;
+  padding: 13px 42px;
+  margin-bottom: 32px;
 }
 
 .result-tags-line {
-  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  font-size: 15px;
   opacity: 0.75;
-  max-width: 65vw;
+  max-width: 780px;
   letter-spacing: 0.02em;
 }
 
 .result-ingredients-full {
-  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  font-size: 15px;
   font-style: italic;
   opacity: 0.7;
-  max-width: 70vw;
+  max-width: 840px;
   text-align: center;
 }
 
 @media (orientation: portrait) {
   .result-layout {
-    margin-bottom: 5vh;
+    margin-bottom: 53px;
   }
 
   .result-visual {
-    width: clamp(280px, 62vw, 500px);
-    height: clamp(280px, 62vw, 500px);
-    margin: 2vh 0 2.2vh;
+    width: 340px;
+    height: 340px;
+    margin: 22px 0 24px;
   }
 
   .result-ingredient-label {
-    font-size: clamp(1.05rem, 3vw, 1.4rem);
+    font-size: 22px;
   }
 
   .result-ingredient-pill {
-    font-size: clamp(1.6rem, 4.6vw, 2.4rem);
-    padding: 1.7vh 7vw;
+    font-size: 34px;
+    padding: 19px 55px;
   }
 
   .result-tags-line {
-    font-size: clamp(1.05rem, 3vw, 1.4rem);
-    max-width: 88vw;
+    font-size: 22px;
+    max-width: 950px;
   }
 
   .result-ingredients-full {
-    font-size: clamp(1rem, 2.8vw, 1.25rem);
-    max-width: 88vw;
+    font-size: 20px;
+    max-width: 950px;
   }
 }
 
@@ -107,7 +107,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    gap: 96px;
     max-width: 1500px;
   }
 
@@ -129,25 +129,25 @@
   }
 
   .result-visual {
-    width: clamp(240px, 21vw, 360px);
-    height: clamp(240px, 21vw, 360px);
-    margin: 0 0 1.5vh;
+    width: 260px;
+    height: 260px;
+    margin: 0 0 16px;
   }
 }
 
 .result-reject-button {
   display: block;
-  margin: 2vh auto 0;
+  margin: 22px auto 0;
   font-family: var(--font-brand);
   font-weight: 600;
-  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.55);
   background: transparent;
   border: none;
   text-decoration: underline;
   text-underline-offset: 3px;
   cursor: pointer;
-  padding: 1vh 1vw;
+  padding: 11px 10px;
 }
 
 .result-reject-button:active {
