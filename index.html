@@ -1,35 +1,47 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lenovo LAB — Selector de Bebidas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/screens/processing.css" />
-    <link rel="stylesheet" href="css/screens/result.css" />
-    <link rel="stylesheet" href="css/screens/leadCapture.css" />
-  </head>
-  <body>
-    <div id="app"></div>
-
-    <script src="js/config.js"></script>
-    <script src="js/engine.js"></script>
-    <script src="js/state.js"></script>
-    <script src="js/chrome.js"></script>
-    <script src="js/screens/welcome.js"></script>
-    <script src="js/screens/alcoholFilter.js"></script>
-    <script src="js/screens/leadCapture.js"></script>
-    <script src="js/screens/question.js"></script>
-    <script src="js/screens/processing.js"></script>
-    <script src="js/screens/result.js"></script>
-    <script src="js/screens/closing.js"></script>
-    <script src="js/router.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostico ADMIRA 3</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    #app {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    .screen {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: purple;
+      color: white;
+      font-family: sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      border: 20px solid lime;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // Simula exactamente el patrón real del kiosko:
+    // body vacío al cargar, JS llena #app después con un pequeño delay
+    setTimeout(function () {
+      document.getElementById('app').innerHTML =
+        '<div class="screen">PRUEBA 3: BODY VACÍO<br>LLENADO POR JS<br>(IGUAL QUE EL KIOSKO REAL)</div>';
+    }, 200);
+  </script>
+</body>
 </html>
