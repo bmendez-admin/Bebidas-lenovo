@@ -3,41 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lenovo LAB — Selector de Bebidas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/screens/processing.css" />
-    <link rel="stylesheet" href="css/screens/result.css" />
-    <link rel="stylesheet" href="css/screens/leadCapture.css" />
+    <title>Diagnostico 4</title>
+    <style>
+      :root {
+        --red-signature: #E1251B;
+        --purple-deep-2: #7A126B;
+        --white: #FFFFFF;
+        --black: #1E0013;
+        --font-brand: 'Montserrat', 'Lato', Arial, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: var(--font-brand);
+        background: var(--black);
+        color: var(--white);
+      }
+      #app {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .screen {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 65px 115px;
+      }
+      .bg-gradient-deep {
+        background:
+          repeating-linear-gradient(96deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 10px),
+          radial-gradient(circle at 88% 10%, rgba(216, 27, 130, 0.55), transparent 42%),
+          radial-gradient(circle at 6% 92%, rgba(225, 37, 27, 0.5), transparent 48%),
+          linear-gradient(165deg, #2b0a1b 0%, #3d0f2c 35%, #260a22 70%, #1a0616 100%);
+      }
+      .brand-title {
+        font-weight: 300;
+        font-size: 58px;
+        margin-bottom: 27px;
+      }
+      .brand-title strong { font-weight: 800; }
+      .cta-button {
+        font-family: var(--font-brand);
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--white);
+        background: linear-gradient(90deg, var(--red-signature) 0%, var(--purple-deep-2) 100%);
+        border: none;
+        border-radius: 999px;
+        padding: 16px 42px;
+      }
+    </style>
   </head>
   <body>
     <div id="app"><div class="screen bg-gradient-deep">
-      <div class="side-tab">
-        <img src="assets/img/logo.png" alt="Lenovo" class="side-tab-logo" />
-      </div>
-      <p class="eyebrow">Bienvenido a</p>
-      <img class="brand-logo" src="assets/img/logo.png" alt="Lenovo" />
-      <h1 class="brand-title">Descubre la bebida<br /><strong>que combina contigo.</strong></h1>
+      <h1 class="brand-title">PRUEBA 4<br /><strong>SIN FUENTES, SIN JS, SIN IMAGENES</strong></h1>
       <button class="cta-button" id="btn-start">Comenzar</button>
     </div></div>
-
-    <script src="js/config.js"></script>
-    <script src="js/engine.js"></script>
-    <script src="js/state.js"></script>
-    <script src="js/chrome.js"></script>
-    <script src="js/screens/welcome.js"></script>
-    <script src="js/screens/alcoholFilter.js"></script>
-    <script src="js/screens/leadCapture.js"></script>
-    <script src="js/screens/question.js"></script>
-    <script src="js/screens/processing.js"></script>
-    <script src="js/screens/result.js"></script>
-    <script src="js/screens/closing.js"></script>
-    <script src="js/router.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
