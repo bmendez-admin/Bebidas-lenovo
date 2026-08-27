@@ -28,11 +28,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-  height: 1080px;
-  width: 1920px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   font-family: var(--font-brand);
   background: var(--black);
@@ -41,8 +42,8 @@ html, body {
 
 #app {
   position: relative;
-  height: 1080px;
-  width: 1920px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -82,6 +83,7 @@ html, body {
   justify-content: center;
   border-bottom-left-radius: 10px;
   z-index: 5;
+  overflow: hidden;
 }
 
 .side-tab-logo {
