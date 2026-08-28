@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diagnostico 4</title>
+    <title>Diagnostico 5</title>
     <style>
       :root {
         --red-signature: #E1251B;
@@ -21,15 +21,17 @@
         background: var(--black);
         color: var(--white);
       }
+      /* SIN #app intermedio. SIN position:absolute/inset. 
+         El screen cuelga directo del body con display:flex, 
+         igual que estado.html/cocina.html. */
       #app {
-        position: relative;
         height: 100%;
         width: 100%;
         overflow: hidden;
       }
       .screen {
-        position: absolute;
-        inset: 0;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -64,7 +66,7 @@
   </head>
   <body>
     <div id="app"><div class="screen bg-gradient-deep">
-      <h1 class="brand-title">PRUEBA 4<br /><strong>SIN FUENTES, SIN JS, SIN IMAGENES</strong></h1>
+      <h1 class="brand-title">PRUEBA 5<br /><strong>SIN POSITION:ABSOLUTE EN .SCREEN</strong></h1>
       <button class="cta-button" id="btn-start">Comenzar</button>
     </div></div>
   </body>
