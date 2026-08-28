@@ -65,7 +65,7 @@
   },
   {
     "id": "DR04",
-    "name": "EPYC Sour",
+    "name": "AMD Epyc Sour",
     "baseDrink": "Pisco Sour",
     "poweredBy": "AMD",
     "alcoholic": true,
@@ -121,7 +121,7 @@
   },
   {
     "id": "DR07",
-    "name": "Help Desk Cocoa",
+    "name": "Servixe Desk Cocoa Powered By Lenovo Service and Solutions",
     "baseDrink": "Chocolate",
     "poweredBy": "Lenovo Support",
     "alcoholic": false,
@@ -197,7 +197,7 @@
   },
   {
     "id": "DR11",
-    "name": "ThinkShield Club",
+    "name": "CyberSecurity Club Powered By Lenovo ThinkShield",
     "baseDrink": "Cerveza Club Colombia",
     "poweredBy": "Lenovo Cybersecurity",
     "alcoholic": true,
