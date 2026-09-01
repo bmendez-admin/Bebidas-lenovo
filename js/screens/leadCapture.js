@@ -68,11 +68,13 @@ function submitLead(payload) {
   }).catch(() => {});
 }
 
-function actualizarEstadoPedido(id, estado) {
+function actualizarEstadoPedido(id, estado, bebida) {
   const url = window.CONFIG.LEADS_ENDPOINT_URL;
   if (!url || !id) return;
 
-  const body = new URLSearchParams({ action: "actualizar_pedido", id, estado });
+  const payload = { action: "actualizar_pedido", id, estado };
+  if (bebida) payload.bebida = bebida;
+  const body = new URLSearchParams(payload);
 
   fetch(url, {
     method: "POST",

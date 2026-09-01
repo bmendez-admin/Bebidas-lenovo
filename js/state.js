@@ -57,6 +57,11 @@ function computeResult() {
   return selected;
 }
 
+function setManualDrink(drink) {
+  state.selectedDrink = drink;
+  return drink;
+}
+
 function getState() {
   return state;
 }
@@ -71,5 +76,6 @@ window.SessionState = {
   pickQuestion,
   recordAnswer,
   computeResult,
+  setManualDrink,
   getState,
 };

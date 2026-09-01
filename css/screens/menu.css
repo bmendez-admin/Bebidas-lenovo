@@ -1,0 +1,101 @@
+.menu-screen {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  justify-content: flex-start;
+}
+
+.menu-title {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  width: 100%;
+  max-width: 1500px;
+  margin-bottom: 30px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 18px 14px;
+  cursor: pointer;
+  font-family: var(--font-brand);
+  color: var(--white);
+  text-align: center;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.menu-card:active {
+  background: var(--red-signature);
+  border-color: var(--red-signature);
+  transform: scale(0.97);
+}
+
+.menu-card-image {
+  width: 78px;
+  height: 78px;
+  max-width: 78px;
+  max-height: 78px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.menu-card-name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.menu-card-ingredient {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@media (orientation: portrait) {
+  .menu-screen {
+    padding-top: 60px;
+    padding-bottom: 44px;
+  }
+
+  .menu-title {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 950px;
+  }
+
+  .menu-card {
+    padding: 22px 16px;
+    gap: 10px;
+  }
+
+  .menu-card-image {
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  .menu-card-name {
+    font-size: 17px;
+  }
+
+  .menu-card-ingredient {
+    font-size: 14px;
+  }
+}

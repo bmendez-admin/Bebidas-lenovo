@@ -32,12 +32,28 @@ function goToProcessing() {
 }
 
 function goToResult() {
-  window.Router.goTo("result", goToClosing, goToReintentar);
+  window.Router.goTo("result", goToClosing, goToMenu);
 }
 
-function goToReintentar() {
-  window.SessionState.resetSession();
-  goToWelcome();
+function goToMenu() {
+  window.Router.goTo("menu", goToMenuConfirm, goToElegirEnBarra);
+}
+
+function goToMenuConfirm(drink) {
+  window.SessionState.setManualDrink(drink);
+  window.Router.goTo("menuConfirm", goToResultManual, goToMenu);
+}
+
+function goToResultManual() {
+  const state = window.SessionState.getState();
+  if (state.orderId) {
+    window.Leads.actualizarEstadoPedido(state.orderId, "pendiente", state.selectedDrink.name);
+  }
+  window.Router.goTo("result", goToClosing, goToMenu);
+}
+
+function goToElegirEnBarra() {
+  goToClosing();
 }
 
 function goToClosing() {
